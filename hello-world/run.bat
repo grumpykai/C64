@@ -11,7 +11,7 @@ REM Set the local file name from the command-line parameter
 set "local_file=%~1"
 
 REM Compile
-..\..\retroassembler\retroassembler.exe -O=PRG %local_file%.asm 
+REM ..\..\retroassembler\retroassembler.exe -O=PRG %local_file%.asm 
 
 REM Format the Floppy
 ..\..\vice\bin\c1541.exe -format "%local_file%,01" d64 %local_file%.d64 
